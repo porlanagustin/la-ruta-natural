@@ -25,6 +25,8 @@
                  0px  1px 0px black,
                 -1px  0px 0px black,
                  0px -1px 0px black;
+    border-bottom: 2px solid #2c493f;
+    border-radius: 4px;
 }
 
 
@@ -38,6 +40,9 @@
     animation-timing-function: linear;
     animation-duration: 3s;
     animation-delay: 3s;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: 140px;
 }
 
 @keyframes rotar_logo{
@@ -59,10 +64,15 @@
     grid-column: 1/5;
     justify-content: space-around;
     color: rgb(105, 20, 105);
+    height: 40px;
+    align-items: center;
 }
 
 .containerMenu a:hover{
     color: violet;
+    padding-bottom: 2px;
+    border-bottom: 5px solid violet;
+    transition: all 0.2s;
 }
 
 .containerMenu a{
@@ -76,7 +86,37 @@
     grid-template-rows: repeat(8,1fr);
     height: 708px;
     background-image: url(../assets/fondo.webp);
-}
+    animation-name: parpadeo;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 5s;
+    animation-delay: 5s;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+  .containerGalery div img:hover{
+      transform: scale(1.2);
+  }
+
+@-moz-keyframes parpadeo{  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1.0; }
+  }
+  
+@-webkit-keyframes parpadeo {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1.0; }
+  }
+  
+@keyframes parpadeo {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.3; }
+    100% { opacity: 1.0; }
+  }
 
 .iconVerdura{
     grid-column: 3/5;
@@ -152,6 +192,11 @@
 .containerFooter div a{
     text-decoration: none;
     color: rgb(105, 20, 105);
+}
+
+.containerFooter div a:hover{
+    color: violet;
+    border-bottom: 2px solid violet;
 }
 
 .titleTyc{
@@ -382,6 +427,10 @@
 
     .vid4 {
         grid-column: 7/11;
+    }
+
+    .iconRuta{
+        margin-right: 40px;
     }
 
 }
