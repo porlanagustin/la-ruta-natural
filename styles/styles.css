@@ -85,18 +85,29 @@
     grid-template-columns: repeat(12,1fr);
     grid-template-rows: repeat(8,1fr);
     height: 708px;
-    background-image: url(../assets/fondo.webp);
+    background-image: url(../assets/fondo.jpg);
     animation-name: parpadeo;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 1;
     animation-timing-function: linear;
-    animation-duration: 5s;
-    animation-delay: 5s;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
     background-repeat: no-repeat;
     background-size: cover;
   }
 
+  .containerGaleryB{
+    height: 708px;
+    background-image: url(../assets/fondo.jpg);
+    animation-name: parpadeo;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
-  .containerGalery div img:hover{
+  .containerGaleryB div img:hover{
       transform: scale(1.2);
   }
 
@@ -119,64 +130,46 @@
   }
 
 .iconVerdura{
-    grid-column: 3/5;
-    grid-row: 2/4;
     display: flex;
     justify-content: center;
 }
 
 .iconFrutas{
-    grid-column: 6/8;
-    grid-row: 2/4;
     display: flex;
     justify-content: center;
 }
 
 .iconCereales{
-    grid-column: 9/11;
-    grid-row: 2/4;
     display: flex;
     justify-content: center;
 }
 
 .iconYogurt{
-    grid-column: 3/5;
-    grid-row: 4/6;
     display: flex;
     justify-content: center;
 }
 
 .iconFrutSecos{
-    grid-column: 6/8;
-    grid-row: 4/6;
     display: flex;
     justify-content: center;
 }
 
 .iconComidas{
-    grid-column: 9/11;
-    grid-row: 4/6;
     display: flex;
     justify-content: center;
 }
 
 .iconSintacc{
-    grid-column: 3/5;
-    grid-row: 7/9;
     display: flex;
     justify-content: center;
 }
 
 .iconGranos{
-    grid-column: 6/8;
-    grid-row: 7/9;
     display: flex;
     justify-content: center;
 }
 
 .iconDulces{
-    grid-column: 9/11;
-    grid-row: 7/9;
     display: flex;
     justify-content: center;
 }
@@ -266,9 +259,7 @@
 
 .sectionStyle{
     padding: 20px;
-    width: 79%;
-    background: rgb(0,0,0,0.8);
-    color: white;
+    color: rgb(105, 20, 105);
     display: flex;
     justify-content: space-evenly;
     margin-inline: auto;
@@ -304,7 +295,7 @@
         height: 120px;
     }
 
-    .containerMenu {
+    .containerMenu{
         display: grid;
         grid-column: 1/5;
         color: rgb(105, 20, 105);
@@ -434,6 +425,7 @@
     }
 
 }
+
 
 
 
