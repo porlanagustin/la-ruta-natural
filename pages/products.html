@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="shortcut icon" href="../assets/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <title>RN Productos</title>
 </head>
 <body>
@@ -26,129 +28,116 @@
             </div>
         </nav>
     </header>
-    <main class="containerGalery sectionStyle">
+    <main>
         <article>
-            <table style="border: white;">
-               <tr>
-                   <th>Producto</th>
-                   <th>Beneficios</th>
-                   <th>Ejemplo de Comidas</th>
-               </tr>
-               <tr>
-                   <td style="text-align:center">Tomate</td>
-                   <td>
-                       <ul>
-                           <li>Mejora la circulación sanguínea</li>
-                           <li>Cuida la piel</li>
-                           <li>Evita el estreñimiento</li>
-                           <li>Diurético</li>
-                       </ul>
-                   </td>
-                   <td>
-                       <ol>
-                           <li>Tomates rellenos</li>
-                            <li>Tomate con huevo</li>
-                            <li>Tomate con otras verduras</li>
-                            <li>Arroz con tomate</li>
-                       </ol>
-                   </td>
-               </tr>
-               <tr>
-                <td style="text-align:center">Cebolla</td>
-                <td>
-                    <ul>
+            <table class="table table-success table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Productos</th>
+                    <th scope="col">Beneficios</th>
+                    <th scope="col">Ejemplo Comida</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Tomate</td>
+                    <td>
+                        <li>Mejora la circulación sanguínea</li>
+                        <li>Cuida la piel</li>
+                        <li>Evita el estreñimiento</li>
+                        <li>Diurético</li>
+                    </td>
+                    <td>
+                        <li>Tomates rellenos</li>
+                        <li>Tomate con huevo</li>
+                        <li>Tomate con otras verduras</li>
+                        <li>Arroz con tomate</li>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>Cebolla</td>
+                    <td>
                         <li>vitaminas A</li>
                         <li>potasio</li>
                         <li>hierro</li>
                         <li>fibra alimentaria</li>
-                    </ul>
-                </td>
-                <td>
-                    <ol>
+                    </td>
+                    <td>
                         <li>Cebollas asadas</li>
-                         <li>Cebollas caramelizadas</li>
-                         <li>Bife a la criolla con cebolla</li>
-                         <li>Huevo con cebolla</li>
-                    </ol>
-                </td>
-               </tr>
-               <tr>
-                <td style="text-align:center">Acelga</td>
-                <td>
-                    <ul>
+                        <li>Cebollas caramelizadas</li>
+                        <li>Bife a la criolla con cebolla</li>
+                        <li>Huevo con cebolla</li>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>Acelga</td>
+                    <td>
                         <li>Contiene vitamina C y vitamina K</li>
                         <li>Es una rica fuente de fibra soluble</li>
                         <li>Es un importante antioxidante</li>
                         <li>Tiene altos niveles de potasio</li>
-                    </ul>
-                </td>
-                <td>
-                    <ol>
+                    </td>
+                    <td>
                         <li>Tortilla de Acelgas</li>
                          <li>Ensalada de acelga con almendras</li>
                          <li>Huevos con acelga y tomates</li>
                          <li>Tortilla de Acelga con Calabaza</li>
-                    </ol>
-                </td>
-               </tr>
-               <tr>
-                <td style="text-align:center">Avena</td>
-                <td>
-                    <ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>Avena</td>
+                    <td>
                         <li>Ayuda a controlar el colesterol</li>
                         <li>Rica en atioxidantes</li>
                         <li>Aporta mucha energía</li>
                         <li>Es probiótica</li>
-                    </ul>
-                </td>
-                <td>
-                    <ol>
+                    </td>
+                    <td>
                         <li>Panqueques con avena</li>
                          <li>Ensalada de avena con espárragos</li>
                          <li>Salteado de verduras con vinagreta</li>
                          <li>Crema de avena, calabacín y caqui</li>
-                    </ol>
-                </td>
-               </tr>
-               <tr>
-                <td style="text-align:center">Bananos deshidratados </td>
-                <td>
-                    <ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>Bananos deshidratados</td>
+                    <td>
                         <li>Vitamina A, C, B6</li>
                         <li>Ácido fólico</li>
                         <li>Alimento es rico en azúcar</li>
                         <li>Proteínas</li>
-                    </ul>
-                </td>
-                <td>
-                    <ol>
+                    </td>
+                    <td>
                         <li>Bizcocho de banana deshidratada</li>
                          <li>Crépes con bananos deshidratados</li>
                          <li>Panqueques con bananos deshidratados</li>
                          <li>Mix frutal con bananos deshidratados</li>
-                    </ol>
-                </td>
-               </tr>
-               <tr>
-                <td style="text-align:center">Frutilla</td>
-                <td>
-                    <ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">6</th>
+                    <td>Frutilla</td>
+                    <td>
                         <li>Rica en vitaminas y minerales</li>
                         <li>Actúa como antiinflamatorio</li>
                         <li>desintoxicante</li>
                         <li>anticoagulante</li>
-                    </ul>
-                </td>
-                <td>
-                    <ol>
+                    </td>
+                    <td>
                         <li>Fresas asadas al Oporto</li>
                          <li>Crema de limón con salsa rápida de fresas sin horno</li>
                          <li>Tartitas de fresas con curd de naranja</li>
                          <li>Mini bombones helados de fresa y yogur</li>
-                    </ol>
-                </td>
-               </tr>
-            </table>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
         </article>
     </main>
     <footer class="containerFooter">
