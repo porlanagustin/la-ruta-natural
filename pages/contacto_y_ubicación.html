@@ -26,36 +26,38 @@
             </div>
         </nav>
     </header>
-    <main class="containerGalery sectionStyle">
-            <form action="">
-            <div style="line-height: 1cm;">
-                <label for="nombre">Ingresa tu nombre y apellido:
+
+    <main class="containerGalery">
+        <div class="containerForm">
+            <label for="nombre">Ingresa tu nombre y apellido:
                 <input type="text" placeholder="Ingresa tu nombre" name="nombre">
             </label></br>
             <label for="email">Ingresa tu email:
                 <input type="text" placeholder="aaaa@gmail.com" name="email">
             </label><br>
             <label for="estadocivil">Selecciona tu estado civil:
-            <select name="estadocivil">
-                <option value="soltero">Soltero</option>
-                <option value="casado">Casado</option>
-                <option value="viudo">Viudo</option>
-                <option value="divorciado">Divorciado</option>
-            </select><br>
+                <select name="estadocivil">
+                    <option value="soltero">Soltero</option>
+                    <option value="casado">Casado</option>
+                    <option value="viudo">Viudo</option>
+                    <option value="divorciado">Divorciado</option>
+            </select>
             </label>
             <label for="acepta">¿Desea recibir promociones?
-            <input type="checkbox" name="acepta" value="1" ></br>
+                <input type="checkbox" name="acepta" value="1" ></br>
             </label>
             <textarea cols="30" rows="10" placeholder="Comentarios"></textarea><br>
             <input type="reset" value="Limpiar datos">
-            <input type="submit" value="Enviar datos"></br>
+            <input type="submit" value="Enviar datos">
+        </div>
+        <div class="titleMap">
             <h1>Ubicación</h1>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13656.804252971133!2d-64.32655930163752!3d-31.159695343292952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943281012ae81c0f%3A0xed10571fc7321601!2sLa%20Ruta%20Natural!5e0!3m2!1ses-419!2sar!4v1647380269994!5m2!1ses-419!2sar" width="600" height="280" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-    
-            
-            </form>
+        </div>
+        <div class="containerMap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13656.804252971133!2d-64.32655930163752!3d-31.159695343292952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943281012ae81c0f%3A0xed10571fc7321601!2sLa%20Ruta%20Natural!5e0!3m2!1ses-419!2sar!4v1647380269994!5m2!1ses-419!2sar" width="550" height="550" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>   
     </main>
+
     <footer class="containerFooter">
         <div>
             <a href="terminos_y_condiciones.html">Terminos y Condiciones</a>
