@@ -224,7 +224,7 @@
 }
 
 /*¿Quienes Somos*/
-.containerIframe {
+.containerInstagram {
   width: 100%;
   display: flex;
   grid-column: 9/11;
