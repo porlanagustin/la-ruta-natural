@@ -1,0 +1,48 @@
+/*Extend*/
+
+.central{
+    display: flex;
+    justify-content: center;
+}
+
+.centralVid{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.iconVerdura{
+    @extend .central;
+  }
+  
+  .iconFrutas{
+    @extend .central;
+  }
+  
+  .iconCereales{
+    @extend .central;
+  }
+  
+  .iconYogurt{
+    @extend .central;
+  }
+  
+  .iconFrutSecos{
+    @extend .central;
+  }
+  
+  .iconComidas{
+    @extend .central;
+  }
+  
+  .iconSintacc{
+    @extend .central;
+  }
+  
+  .iconGranos{
+    @extend .central;
+  }
+  
+  .iconDulces{
+    @extend .central;
+  }

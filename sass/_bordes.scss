@@ -1,0 +1,6 @@
+/*BORDES*/
+
+@mixin bordes {
+    background-color: map-get($colores, translucido);
+    border-radius: 10px;
+}

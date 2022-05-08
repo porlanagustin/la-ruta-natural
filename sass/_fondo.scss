@@ -1,0 +1,17 @@
+/*FONDO*/
+
+$icons: (
+    women1: rgb(75, 162, 202), 
+    women2: rgb(241, 232, 232),
+    men1: rgb(51, 42, 42),
+    men2: rgb(209, 98, 98),
+);
+
+/*Fondo Iconos*/
+
+@each $icone, $color in $icons {
+    .fondo--#{$icone}{
+        background-color: $color;
+    }
+  }
+

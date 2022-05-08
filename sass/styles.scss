@@ -1,7 +1,9 @@
 //Import
 @import "colores";
 @import "tamaño";
-
+@import "order";
+@import "fondo";
+@import "bordes";
 
 ////////////////////
 
@@ -27,11 +29,11 @@
     grid-row: 1/2;
     display: flex;
     justify-content: center;
-    color: rgb(44, 73, 63);
+    color: map-get($colores, verdesito);
     font-family: verdana;
     font-size: 25px;
     text-shadow: $contorno-titulo;
-    border-bottom: 2px solid #2c493f;
+    border-bottom: 2px solid map-get($colores, verdesito);
     border-radius: 4px;
 }
 
@@ -60,15 +62,14 @@
     align-items: center;
     a{
         text-decoration: none;
-        color: black;
+        color: map-get($colores, negro);
         animation-duration: 3s;
         animation-name: slidein;  
     }
     a:hover{
-        color: violet;
+        color: map-get($colores, violeta);
     }
 }
-
 
 /*Main*/
 
@@ -78,6 +79,14 @@
     grid-template-rows: repeat(8,1fr);
     height: 708px;
     background-image: url(../assets/fondo.jpg);
+    p{
+    font-size: 13px;
+    padding: 16px;
+    margin: 17px;
+    background-color: map-get($colores, translucido);
+    @include bordes;
+    color: map-get($colores, blanco);
+    }
   }
 
   .containerGaleryB{
@@ -87,68 +96,6 @@
         transform: scale(1.2);
     }   
   }
-
-/*Index*/
-
-.row div{
-    animation-name: parpadeo;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-duration: 3s;
-    animation-delay: 1s;
-}
-
-.iconVerdura{
-    display: flex;
-    justify-content: center;
-    animation-name: parpadeo;
-    animation-iteration-count: 1;
-    animation-timing-function: linear;
-    animation-duration: 1s;
-    animation-delay: 0.5s;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.iconFrutas{
-    display: flex;
-    justify-content: center;
-}
-
-.iconCereales{
-    display: flex;
-    justify-content: center;
-}
-
-.iconYogurt{
-    display: flex;
-    justify-content: center;
-}
-
-.iconFrutSecos{
-    display: flex;
-    justify-content: center;
-}
-
-.iconComidas{
-    display: flex;
-    justify-content: center;
-}
-
-.iconSintacc{
-    display: flex;
-    justify-content: center;
-}
-
-.iconGranos{
-    display: flex;
-    justify-content: center;
-}
-
-.iconDulces{
-    display: flex;
-    justify-content: center;
-}
 
 /*Footer*/
 
@@ -163,8 +110,8 @@
     color: $color-NavFooter;
     }
     div a:hover{
-    color: violet;
-    border-bottom: 2px solid violet;
+    color: map-get($colores, violeta);
+    border-bottom: 2px solid map-get($colores, violeta);
     }
 }
 
@@ -178,8 +125,7 @@
 /*Terminos y Condiciones*/
 
 .titleTyc{
-    display: flex;
-    justify-content: center;
+    @extend .central;
     color: $color-titulo;
     font-family: verdana;
     font-size: $font-titulo;
@@ -190,201 +136,151 @@
     background-image: linear-gradient(to top, white, green);
 }
 
-/*Servicios*/
+/*Servicios1*/
 
-.titleNutri{
-    grid-column: 6/9;
+.titleGral{
+    grid-column: 5/10;
     grid-row: 1/1;
     color: $color-titulo;
     font-size: $font-titulo;
     text-shadow: $contorno-titulo;
-}
-
-.titleNutriDescrip{
-    grid-column: 2/12;
-    grid-row: 2/2;
-    display: flex;
-    justify-content: center;
+    text-align: center;
+    h2{
+        font-size: 15px;
+        text-shadow: none;
+        color: $color-h2;
+    }
 }
 
 .vid1{
-    grid-column: 3/6;
+    grid-column: 6/9;
     grid-row:    3/6;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    @extend .centralVid;
 }
 
 .vid2{
-    grid-column: 8/11;
+    grid-column: 9/12;
     grid-row: 3/6;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    @extend .centralVid;
 }
 
 .vid3{
-    grid-column: 3/6;
+    grid-column: 6/9;
     grid-row: 6/8;
-    display: flex;
-    justify-content: center;
+    @extend .central;
 }
 
 .vid4{
-    grid-column: 8/11;
+    grid-column: 9/12;
     grid-row: 6/8;
-    display: flex;
-    justify-content: center;
+    @extend .central;
+}
+
+.textNutri{
+    grid-column: 2/6;
+    grid-row: 3/8;
+    text-align: center;
+}
+
+.botonContacto{
+    grid-column: 3/5;
+    grid-row: 7/8;
+    text-align: center;
+    animation-name: parpadeo;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 
 /*¿Quienes Somos*/
 
-.containerIframe{
+.containerInstagram {
     width: 100%;
     display: flex;
     grid-column: 9/11;
     grid-row: 3/9;
-}
-
-.titleNos{
-    grid-row: 1/2;
-    grid-column: 5/9;
-    color: $color-titulo;
-    text-shadow: $contorno-titulo;
-    font-size: $font-titulo;
-    p{
-        color: black;
-        text-shadow: none;
-    }
-}
-
-.titleInsta{
+  }
+  
+  .titleInsta {
     grid-column: 9/11;
     grid-row: 2/3;
     display: flex;
     justify-content: center;
     align-content: center;
     align-items: center;
-    color: white;
-    h2{
+    color: map-get($colores, blanco);
+  }
+  .titleInsta h2 {
     font-size: 12px;
     padding: 16px;
     margin: 17px;
-    background-color: rgba(0, 0, 0, 0.4);
-    border-radius: 10px;
-    }
-}
-
-.iconMan1{
+    @include bordes;
+  }
+  
+  .iconMan1 {
     grid-column: 2/4;
     grid-row: 3/4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.iconMan2{
+    @extend .centralVid;
+  }
+  
+  .iconMan2 {
     grid-column: 5/7;
     grid-row: 3/4;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.iconGirl1{
+    @extend .centralVid;
+  }
+  
+  .iconGirl1 {
     grid-column: 2/4;
     grid-row: 6/7;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.iconGirl2{
+    @extend .centralVid;
+  }
+  
+  .iconGirl2 {
     grid-column: 5/7;
     grid-row: 6/7;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.textMan1{
+    @extend .centralVid;
+  }
+  
+  .textMan1 {
     grid-column: 2/4;
     grid-row: 4/6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 12px;
-    padding: 16px;
-    margin: 17px;
-    background-color: rgba(0, 0, 0, 0.4);
-    border-radius: 10px;
-    color: white;
-}
-
-.textMan2{
+    @extend .centralVid;
+  }
+  
+  .textMan2 {
     grid-column: 5/7;
     grid-row: 4/6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 12px;
-    padding: 16px;
-    margin: 17px;
-    background-color: rgba(0, 0, 0, 0.4);
-    border-radius: 10px;
-    color: white;
-}
-
-.textGirl1{
+    @extend .centralVid;
+  }
+  
+  .textGirl1 {
     grid-column: 2/4;
     grid-row: 7/9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 12px;
-    padding: 16px;
-    margin: 17px;
-    background-color: rgba(0, 0, 0, 0.4);
-    border-radius: 10px;
-    color: white;
-}
-
-.textGirl2{
+    @extend .centralVid;
+  }
+  
+  .textGirl2 {
     grid-column: 5/7;
     grid-row: 7/9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 12px;
-    padding: 16px;
-    margin: 17px;
-    background-color: rgba(0, 0, 0, 0.4);
-    border-radius: 10px;
-    color: white;
-}
+    @extend .centralVid;
+  }
 
 /*Contacto y Ubicación*/
 
 .containerMap{
     grid-column: 8/12;
     grid-row: 3/8;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend .centralVid;
 }
 
 .titleMap{
     grid-column: 8/12;
     grid-row: 1/2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend .centralVid;
     font-size: 12px;
     padding: 16px;
     margin: 17px;
-    background-color: rgba(0, 0, 0, 0.4);
-    border-radius: 10px;
-    color: white;
+    @include bordes;
+    color: map-get($colores, blanco);
 }
 
 .containerForm{
@@ -452,8 +348,8 @@
           margin-left: 0%;
           width: 90%;
         }
-      }
-
+      } 
+      
 
 /* Responsive mobile */
 
@@ -534,76 +430,3 @@
         grid-column: 7/11;
       }
 }    
-
-
-
-/* Responsive Tablet */
-
-@media screen and (max-width: 600px) {
-    .titleHeader {
-        grid-column: 2/5;
-        font-size: 20px;
-    }
-
-    .containerMenu{
-        font-size: 13px;
-        text-align: center;
-        grid-column: 1/5;
-    }
-
-    .containerGalery{
-        height: 614px;
-        div iframe{
-            width: 250px;
-            height: 200px;
-        }
-    }
-
-    .iconVerdura {
-        grid-column: 1/5;
-    }
-
-    .iconFrutas {
-    grid-column: 5/8;
-    }
-
-    .iconYogurt {
-        grid-column: 1/5;
-    }
-
-    .iconFrutSecos {
-        grid-column: 5/8;
-    }
-    
-    .titleNutri {
-        grid-column: 4/10;
-    }
-
-    .titleNutriDescrip {
-        grid-column: 2/12;
-        grid-row: 1/2;
-        align-items: end;
-        font-size: 16px;
-    }
-
-    .vid1 {
-        grid-column: 1/6;
-    }
-
-    .vid2 {
-        grid-column: 7/11;
-    }
-
-    .vid3 {
-        grid-column: 1/6;
-    }
-
-    .vid4 {
-        grid-column: 7/11;
-    }
-
-    .iconRuta{
-        margin-right: 40px;
-    }
-
-}
