@@ -3,8 +3,12 @@
 <<<<<<< HEAD
 @import "letra";
 =======
+<<<<<<< HEAD
+@import "letra";
+=======
 @import "tamaño";
 >>>>>>> 7ef39a4612f93200ce99894c94b7e1c0e423ab11
+>>>>>>> e75bcebca4893b7c9bfd32b7cb8e49190519e140
 @import "order";
 @import "fondo";
 @import "bordes";
@@ -24,6 +28,9 @@ body {
 }
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> e75bcebca4893b7c9bfd32b7cb8e49190519e140
 //Contenedores//
 
 .containerGalery{
@@ -37,6 +44,8 @@ body {
   @include letratexto;
   font-family: $letrasecundaria;
   }
+<<<<<<< HEAD
+=======
 =======
 .titleHeader{
     grid-column: 3/4;
@@ -50,6 +59,7 @@ body {
     border-bottom: 2px solid map-get($colores, verdesito);
     border-radius: 4px;
 >>>>>>> 7ef39a4612f93200ce99894c94b7e1c0e423ab11
+>>>>>>> e75bcebca4893b7c9bfd32b7cb8e49190519e140
 }
 
 .containerNav{
@@ -105,6 +115,128 @@ body {
   li a{
     text-decoration: none;
     color: $color-NavFooter;
+<<<<<<< HEAD
+    }
+  li a:hover{
+    color: map-get($colores, violeta);
+    }
+}
+
+.containerInstagram {
+  @extend .centralVid;
+  grid-column: 9/12;
+  grid-row: 2/5;
+  a {
+    @include bordes;
+  padding: 18px;
+  }
+}
+
+.containerForm{
+  grid-column: 3/6;
+    grid-row: 2/6;
+    display: grid;
+    justify-content: center;
+    align-content: space-around;
+    font-family: $letraprincipal;
+    text-shadow: 0px 3px 3px rgb(255 255 255 / 50%), 0px -1px 1px rgb(0 0 0 / 30%);
+    text-align: center;
+    background-color: map-get($colores, translucidoform);
+}
+
+.containerMap{
+  grid-column: 8/12;
+  grid-row: 2/7;
+  @extend .centralVid;
+}
+
+/*Titulos*/
+
+.titleHeader{
+  grid-column: 5/9;
+  grid-row: 1/2;
+  @extend .centralVid;
+  color: $color-titulo;
+  font-family: $letraprincipal;
+  font-size: 35px;
+  text-shadow: 1px 0px 0px #000, 0px 1px 0px #080908, -1px 0px 0px #000, 0px -1px 0px #000;
+  border-radius: 4px;
+}
+
+.titleService{
+  grid-column: 2/6;
+  grid-row: 1/2;
+  font-family: $letraprincipal;
+  flex-direction: column;
+  @extend .centralVid;
+  @include letracompuesta;
+  h2 {
+  font-size: 16px;
+}
+}
+
+.titleNos{
+  grid-column: 3/7;
+  grid-row: 1/2;
+  font-family: $letraprincipal;
+  flex-direction: column;
+  @extend .centralVid;
+  @include letracompuesta;
+  h2 {
+  font-size: 16px;
+}
+}
+
+.titleTyc{
+  @extend .central;
+  color: $color-titulo;
+  font-family: $letrasecundaria;
+  font-size: $font-titulo;
+  text-shadow: $contorno-titulo;
+}
+
+.titleInsta {
+  grid-column: 9/12;
+  grid-row: 1/2;
+  @extend .centralVid;
+  color: map-get($colores, blanco);
+  $letrasecundaria: "Patrick Hand", cursive;
+  h2 {
+  @include letratexto;
+  @include bordes;
+}
+}
+
+.titleMap{
+  grid-column: 8/12;
+  grid-row: 1/2;
+  @extend .centralVid;
+  @include letratexto;
+  background-color: map-get($colores, translucidoform );
+  color: map-get($colores, blanco);
+  $letrasecundaria: "Patrick Hand", cursive;
+}
+
+/*Iconos,Fotos,Videos*/
+
+.iconRuta{
+  grid-row: 1/4;
+  grid-column: 1/3;
+  @extend .centralVid;
+  animation-name: rotar_logo;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 3s;
+  animation-delay: 3s;
+}
+
+  .iconVerdura{
+    @extend .central;
+    grid-column: 3/5;
+    grid-row: 2/4;
+    @extend .parpadeo;
+  }
+=======
 <<<<<<< HEAD
     }
   li a:hover{
@@ -284,6 +416,7 @@ body {
     }
 }
 >>>>>>> 7ef39a4612f93200ce99894c94b7e1c0e423ab11
+>>>>>>> e75bcebca4893b7c9bfd32b7cb8e49190519e140
 
   .iconFrutas{
     @extend .central;
@@ -300,12 +433,98 @@ body {
   }
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> e75bcebca4893b7c9bfd32b7cb8e49190519e140
   .iconYogurt{
     @extend .central;
     grid-column: 3/5;
     grid-row: 4/6;
     @extend .parpadeo;
   }
+<<<<<<< HEAD
+
+  .iconFrutSecos{
+    @extend .central;
+    grid-column: 6/8;
+    grid-row: 4/6;
+    @extend .parpadeo;
+  }
+
+  .iconComidas{
+    @extend .central;
+    grid-column: 9/11;
+    grid-row: 4/6;
+    @extend .parpadeo;
+  }
+
+  .iconSintacc{
+    @extend .central;
+    grid-column: 3/5;
+    grid-row: 7/9;
+  }
+
+  .iconGranos{
+    @extend .central;
+    grid-column: 6/8;
+    grid-row: 7/9;
+  }
+
+  .iconDulces{
+    @extend .central;
+    grid-column: 9/11;
+    grid-row: 7/9;
+  }
+
+.iconTractor{
+    animation-duration: 6s;
+    animation-name: tractor;
+    animation-iteration-count: infinite;
+    grid-column: 7/13;
+    display: flex;
+    align-items: center;
+}
+
+.vid1{
+  grid-column: 7/9;
+  grid-row: 1/3;
+  @extend .centralVid;
+}
+
+.vid2{
+  grid-column: 9/12;
+  grid-row: 1/3;
+  @extend .centralVid;
+}
+
+.vid3{
+  grid-column: 7/9;
+  grid-row: 3/6;
+  @extend .central;
+}
+
+.vid4{
+  grid-column: 9/12;
+  grid-row: 3/6;
+  @extend .central;
+}
+
+  
+.iconMan1 {
+  grid-column: 2/5;
+  grid-row: 2/3;
+  align-items: center;
+  @extend .centralVid;
+}
+
+.iconMan2 {
+  grid-column: 5/8;
+  grid-row: 2/3;
+  align-items: center;
+  @extend .centralVid;
+}
+
+=======
 =======
 .titleTyc{
     @extend .central;
@@ -453,10 +672,12 @@ body {
   @extend .centralVid;
 }
 
+>>>>>>> e75bcebca4893b7c9bfd32b7cb8e49190519e140
 .iconGirl1 {
   grid-column: 2/5;
   grid-row: 4/5;
   @extend .centralVid;
+<<<<<<< HEAD
 }
 
 .iconGirl2 {
@@ -481,6 +702,32 @@ body {
   @extend .centralVid;
 }
 
+=======
+}
+
+.iconGirl2 {
+  grid-column: 5/8;
+  grid-row: 4/5;
+  @extend .centralVid;
+}
+
+/*Textos,Parrafos*/
+
+.textMan1 {
+  grid-column: 2/5;
+  grid-row: 3/4;
+  $letrasecundaria: "Patrick Hand", cursive;
+  @extend .centralVid;
+}
+
+.textMan2 {
+  grid-column: 5/8;
+  grid-row: 3/4;
+  $letrasecundaria: "Patrick Hand", cursive;
+  @extend .centralVid;
+}
+
+>>>>>>> e75bcebca4893b7c9bfd32b7cb8e49190519e140
 .textGirl1 {
   grid-column: 2/5;
   grid-row: 5/6;
@@ -573,6 +820,17 @@ body {
     color: $color-NavFooter;
   }
 }
+<<<<<<< HEAD
+
+/*NO DESKTOP*/
+
+.botonMobile{
+  display: none;
+}
+
+.ubiCarla{
+  display: none;
+=======
 =======
 .containerInstagram {
     width: 100%;
@@ -672,6 +930,7 @@ body {
     @include bordes;
     color: map-get($colores, blanco);
 >>>>>>> 7ef39a4612f93200ce99894c94b7e1c0e423ab11
+>>>>>>> e75bcebca4893b7c9bfd32b7cb8e49190519e140
 }
 
 .ubiFede{
@@ -745,6 +1004,9 @@ body {
         }
       } 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> e75bcebca4893b7c9bfd32b7cb8e49190519e140
 
       @keyframes aviso {
         
@@ -778,6 +1040,16 @@ body {
 
 
 
+<<<<<<< HEAD
+
+
+
+
+
+
+
+
+=======
 
 
 
@@ -789,6 +1061,7 @@ body {
       
 >>>>>>> 7ef39a4612f93200ce99894c94b7e1c0e423ab11
 
+>>>>>>> e75bcebca4893b7c9bfd32b7cb8e49190519e140
 
 @media screen and (max-width: 320px){
 
@@ -928,6 +1201,9 @@ body {
   }
 
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> e75bcebca4893b7c9bfd32b7cb8e49190519e140
   .iconDulces{
     grid-row: 6/7;
   }
@@ -944,6 +1220,7 @@ body {
     grid-column: 2/6;
     grid-row: 3/4;
   }
+<<<<<<< HEAD
 
   .iconGirl2{
     grid-column: 8/13;
@@ -982,6 +1259,46 @@ body {
     display: none;
   }
 
+=======
+
+  .iconGirl2{
+    grid-column: 8/13;
+    grid-row: 3/4;
+  }
+
+  .titleMap{
+    display: none;
+  }
+
+  .textMan1{
+    display: none;
+  }
+
+  .textMan2{
+    display: none;
+  }
+
+  .textGirl1{
+    display: none;
+  }
+
+  .textGirl2{
+    display: none;
+  }
+
+  .fondo--men1{
+    display: none;
+  }
+
+  .fondo--men2{
+    display: none;
+  }
+
+  .fondo--women1{
+    display: none;
+  }
+
+>>>>>>> e75bcebca4893b7c9bfd32b7cb8e49190519e140
   .fondo--women2{
     display: none;
   }
