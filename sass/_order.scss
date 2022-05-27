@@ -1,66 +1,18 @@
 /*Extend*/
 
 .central{
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .centralVid{
-    display: flex;
-    justify-content: center;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> e75bcebca4893b7c9bfd32b7cb8e49190519e140
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .parpadeo{
-    animation-name: aviso;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
-<<<<<<< HEAD
+  animation-name: aviso;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
-=======
-}
-=======
-    align-items: flex-end;
-}
-
-.iconVerdura{
-    @extend .central;
-  }
-  
-  .iconFrutas{
-    @extend .central;
-  }
-  
-  .iconCereales{
-    @extend .central;
-  }
-  
-  .iconYogurt{
-    @extend .central;
-  }
-  
-  .iconFrutSecos{
-    @extend .central;
-  }
-  
-  .iconComidas{
-    @extend .central;
-  }
-  
-  .iconSintacc{
-    @extend .central;
-  }
-  
-  .iconGranos{
-    @extend .central;
-  }
-  
-  .iconDulces{
-    @extend .central;
-  }
->>>>>>> 7ef39a4612f93200ce99894c94b7e1c0e423ab11
->>>>>>> e75bcebca4893b7c9bfd32b7cb8e49190519e140
