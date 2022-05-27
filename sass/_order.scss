@@ -8,6 +8,16 @@
 .centralVid{
     display: flex;
     justify-content: center;
+<<<<<<< HEAD
+    align-items: center;
+}
+
+.parpadeo{
+    animation-name: aviso;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+=======
     align-items: flex-end;
 }
 
@@ -46,3 +56,4 @@
   .iconDulces{
     @extend .central;
   }
+>>>>>>> 7ef39a4612f93200ce99894c94b7e1c0e423ab11

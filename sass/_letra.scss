@@ -1,0 +1,16 @@
+$letraprincipal: 'Koulen', curisve;
+$letrasecundaria: "Patrick Hand", cursive;
+
+@mixin letracompuesta {
+  background: #6a480d;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 0px 3px 3px rgb(255 255 255 / 50%), 0px -1px 1px rgb(0 0 0 / 30%);
+}
+
+@mixin letratexto {
+    font-size: 16px;
+    padding: 16px;
+    margin: 17px;
+    color: map-get($colores, blanco);
+}

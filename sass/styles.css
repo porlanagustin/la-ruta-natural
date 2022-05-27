@@ -1,15 +1,34 @@
+<<<<<<< HEAD:styles/styles.css
+/*MAPA*/
+/*Extend*/
+.central, .botonContact, .vid4, .vid3, .iconDulces, .iconGranos, .iconSintacc, .iconComidas, .iconFrutSecos, .iconYogurt, .iconCereales, .iconFrutas, .iconVerdura, .titleTyc {
+=======
 @charset "UTF-8";
 /*MAPA*/
 /*Extend*/
 .central, .vid4, .vid3, .titleTyc, .iconDulces, .iconGranos, .iconSintacc, .iconComidas, .iconFrutSecos, .iconYogurt, .iconCereales, .iconFrutas, .iconVerdura {
+>>>>>>> 7ef39a4612f93200ce99894c94b7e1c0e423ab11:sass/styles.css
   display: flex;
   justify-content: center;
 }
 
+<<<<<<< HEAD:styles/styles.css
+.centralVid, .separadorProduc, .textGirl2, .textGirl1, .textMan2, .textMan1, .iconGirl2, .iconGirl1, .iconMan2, .iconMan1, .vid2, .vid1, .iconRuta, .titleMap, .titleInsta, .titleNos, .titleService, .titleHeader, .containerMap, .containerInstagram {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parpadeo, .botonContacto, .iconComidas, .iconFrutSecos, .iconYogurt, .iconCereales, .iconFrutas, .iconVerdura {
+  animation-name: aviso;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+=======
 .centralVid, .titleMap, .containerMap, .textGirl2, .textGirl1, .textMan2, .textMan1, .iconGirl2, .iconGirl1, .iconMan2, .iconMan1, .vid2, .vid1 {
   display: flex;
   justify-content: center;
   align-items: flex-end;
+>>>>>>> 7ef39a4612f93200ce99894c94b7e1c0e423ab11:sass/styles.css
 }
 
 /*FONDO*/
@@ -37,16 +56,29 @@
   box-sizing: border-box;
 }
 
-/*Nav*/
-.containerNav {
-  background-image: linear-gradient(to top, rgba(72, 159, 147, 0.8117647059), #bcc29e);
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  align-items: center;
-  height: 153px;
+body {
+  background-image: url(../assets/fondo.jpg);
+  width: 100%;
+  height: 100%;
 }
 
+<<<<<<< HEAD:styles/styles.css
+.containerGalery {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  width: 100%;
+}
+.containerGalery p {
+  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 16px;
+  margin: 17px;
+  color: white;
+  font-family: "Patrick Hand", cursive;
+=======
 .titleHeader {
   grid-column: 3/4;
   grid-row: 1/2;
@@ -58,30 +90,29 @@
   text-shadow: 1px 0px 0px black, 0px 1px 0px black, -1px 0px 0px black, 0px -1px 0px black;
   border-bottom: 2px solid rgb(44, 73, 63);
   border-radius: 4px;
+>>>>>>> 7ef39a4612f93200ce99894c94b7e1c0e423ab11:sass/styles.css
 }
 
-.iconRuta {
-  grid-row: 1/3;
-  grid-column: 5/5;
-  display: flex;
-  justify-content: center;
-  animation-name: rotar_logo;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  animation-duration: 3s;
-  animation-delay: 3s;
-  width: fit-content;
-  margin-left: auto;
-  margin-right: 140px;
+.containerNav {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  align-items: center;
+  height: 153px;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .containerMenu {
   display: flex;
-  grid-column: 1/5;
+  grid-column: 2/12;
+  grid-row: 3/4;
   justify-content: space-around;
   color: black;
   height: 40px;
   align-items: center;
+  list-style: none;
+  font-family: "Koulen", curisve;
+  font-size: 19px;
 }
 .containerMenu a {
   text-decoration: none;
@@ -93,13 +124,15 @@
   color: violet;
 }
 
-/*Main*/
-.containerGalery {
+.containerFooter {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(8, 1fr);
-  height: 708px;
-  background-image: url(../assets/fondo.jpg);
+  align-items: center;
+  height: 45px;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 .containerGalery p {
   font-size: 13px;
@@ -111,14 +144,176 @@
   color: white;
 }
 
-.containerGaleryB {
-  height: 708px;
-  background-image: url(../assets/fondo.jpg);
+.containerMenuF {
+  display: flex;
+  grid-column: 1/7;
+  font-size: 19px;
+  font-family: "Koulen", curisve;
+  justify-content: space-around;
+  list-style: none;
 }
-.containerGaleryB div img:hover {
-  transform: scale(1.2);
+.containerMenuF li a {
+  text-decoration: none;
+  color: black;
+}
+.containerMenuF li a:hover {
+  color: violet;
 }
 
+.containerInstagram {
+  grid-column: 9/12;
+  grid-row: 2/5;
+}
+.containerInstagram a {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 18px;
+}
+
+.containerForm {
+  grid-column: 3/6;
+  grid-row: 2/6;
+  display: grid;
+  justify-content: center;
+  align-content: space-around;
+  font-family: "Koulen", curisve;
+  text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5), 0px -1px 1px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.containerMap {
+  grid-column: 8/12;
+  grid-row: 2/7;
+}
+
+/*Titulos*/
+.titleHeader {
+  grid-column: 5/9;
+  grid-row: 1/2;
+  color: #9ea160;
+  font-family: "Koulen", curisve;
+  font-size: 35px;
+  text-shadow: 1px 0px 0px #000, 0px 1px 0px #080908, -1px 0px 0px #000, 0px -1px 0px #000;
+  border-radius: 4px;
+}
+
+.titleService {
+  grid-column: 2/6;
+  grid-row: 1/2;
+  font-family: "Koulen", curisve;
+  flex-direction: column;
+  background: #6a480d;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5), 0px -1px 1px rgba(0, 0, 0, 0.3);
+}
+.titleService h2 {
+  font-size: 16px;
+}
+
+.titleNos {
+  grid-column: 3/7;
+  grid-row: 1/2;
+  font-family: "Koulen", curisve;
+  flex-direction: column;
+  background: #6a480d;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5), 0px -1px 1px rgba(0, 0, 0, 0.3);
+}
+.titleNos h2 {
+  font-size: 16px;
+}
+
+.titleTyc {
+  color: #9ea160;
+  font-family: "Patrick Hand", cursive;
+  font-size: 18px;
+  text-shadow: 1px 0px 0px black, 0px 1px 0px black, -1px 0px 0px black, 0px -1px 0px black;
+}
+
+.titleInsta {
+  grid-column: 9/12;
+  grid-row: 1/2;
+  color: white;
+}
+.titleInsta h2 {
+  font-size: 16px;
+  padding: 16px;
+  margin: 17px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.titleMap {
+  grid-column: 8/12;
+  grid-row: 1/2;
+  font-size: 16px;
+  padding: 16px;
+  margin: 17px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+}
+
+<<<<<<< HEAD:styles/styles.css
+/*Iconos,Fotos,Videos*/
+.iconRuta {
+  grid-row: 1/4;
+  grid-column: 1/3;
+  animation-name: rotar_logo;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-duration: 3s;
+  animation-delay: 3s;
+}
+
+.iconVerdura {
+  grid-column: 3/5;
+  grid-row: 2/4;
+}
+
+.iconFrutas {
+  grid-column: 6/8;
+  grid-row: 2/4;
+}
+
+.iconCereales {
+  grid-column: 9/11;
+  grid-row: 2/4;
+}
+
+.iconYogurt {
+  grid-column: 3/5;
+  grid-row: 4/6;
+}
+
+.iconFrutSecos {
+  grid-column: 6/8;
+  grid-row: 4/6;
+}
+
+.iconComidas {
+  grid-column: 9/11;
+  grid-row: 4/6;
+}
+
+.iconSintacc {
+  grid-column: 3/5;
+  grid-row: 7/9;
+}
+
+.iconGranos {
+  grid-column: 6/8;
+  grid-row: 7/9;
+}
+
+.iconDulces {
+  grid-column: 9/11;
+  grid-row: 7/9;
+=======
 /*Footer*/
 .containerFooter {
   display: flex;
@@ -134,12 +329,23 @@
 .containerFooter div a:hover {
   color: violet;
   border-bottom: 2px solid violet;
+>>>>>>> 7ef39a4612f93200ce99894c94b7e1c0e423ab11:sass/styles.css
 }
 
 .iconTractor {
   animation-duration: 6s;
   animation-name: tractor;
   animation-iteration-count: infinite;
+<<<<<<< HEAD:styles/styles.css
+  grid-column: 7/13;
+  display: flex;
+  align-items: center;
+}
+
+.vid1 {
+  grid-column: 7/9;
+  grid-row: 1/3;
+=======
   transform: translate(1px, 152px);
 }
 
@@ -173,20 +379,55 @@
 .vid1 {
   grid-column: 6/9;
   grid-row: 3/6;
+>>>>>>> 7ef39a4612f93200ce99894c94b7e1c0e423ab11:sass/styles.css
 }
 
 .vid2 {
   grid-column: 9/12;
+<<<<<<< HEAD:styles/styles.css
+  grid-row: 1/3;
+}
+
+.vid3 {
+  grid-column: 7/9;
+  grid-row: 3/6;
+=======
   grid-row: 3/6;
 }
 
 .vid3 {
   grid-column: 6/9;
   grid-row: 6/8;
+>>>>>>> 7ef39a4612f93200ce99894c94b7e1c0e423ab11:sass/styles.css
 }
 
 .vid4 {
   grid-column: 9/12;
+<<<<<<< HEAD:styles/styles.css
+  grid-row: 3/6;
+}
+
+.iconMan1 {
+  grid-column: 2/5;
+  grid-row: 2/3;
+  align-items: center;
+}
+
+.iconMan2 {
+  grid-column: 5/8;
+  grid-row: 2/3;
+  align-items: center;
+}
+
+.iconGirl1 {
+  grid-column: 2/5;
+  grid-row: 4/5;
+}
+
+.iconGirl2 {
+  grid-column: 5/8;
+  grid-row: 4/5;
+=======
   grid-row: 6/8;
 }
 
@@ -249,9 +490,86 @@
 .iconGirl2 {
   grid-column: 5/7;
   grid-row: 6/7;
+>>>>>>> 7ef39a4612f93200ce99894c94b7e1c0e423ab11:sass/styles.css
 }
 
+/*Textos,Parrafos*/
 .textMan1 {
+<<<<<<< HEAD:styles/styles.css
+  grid-column: 2/5;
+  grid-row: 3/4;
+}
+
+.textMan2 {
+  grid-column: 5/8;
+  grid-row: 3/4;
+}
+
+.textGirl1 {
+  grid-column: 2/5;
+  grid-row: 5/6;
+}
+
+.textGirl2 {
+  grid-column: 5/8;
+  grid-row: 5/6;
+}
+
+.textNutri {
+  grid-column: 2/6;
+  grid-row: 2/4;
+  text-align: center;
+  height: 388px;
+}
+
+.textContacto {
+  display: flex;
+  grid-column: 2/8;
+  grid-row: 7/8;
+  background: #6a480d;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5), 0px -1px 1px rgba(0, 0, 0, 0.3);
+  font-size: 17px;
+  flex-direction: column;
+  text-transform: uppercase;
+}
+
+/*Formulario,Tablas,Botones*/
+.formContact {
+  display: none;
+}
+
+.tableProducts {
+  background-image: url(../assets/fondo.jpg);
+  color: #e9ebbb;
+  border: 1px solid black;
+  list-style: none;
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+  font-family: "Patrick Hand", cursive;
+}
+.tableProducts tr {
+  background-color: rgba(0, 0, 0, 0.4);
+  font-size: 21px;
+}
+.tableProducts td {
+  font-size: 18px;
+}
+.tableProducts th, .tableProducts td {
+  border: 1px solid black;
+}
+
+.separadorProduc {
+  color: #f25489;
+  text-align: center;
+  border: 2px solid black;
+  font-family: "Patrick Hand", cursive;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-size: 28px;
+  -webkit-text-stroke: 1px black;
+=======
   grid-column: 2/4;
   grid-row: 4/6;
 }
@@ -275,25 +593,57 @@
 .containerMap {
   grid-column: 8/12;
   grid-row: 3/8;
+>>>>>>> 7ef39a4612f93200ce99894c94b7e1c0e423ab11:sass/styles.css
 }
 
-.titleMap {
-  grid-column: 8/12;
+.botonContacto {
+  grid-column: 3/5;
+  grid-row: 4/5;
+  text-align: center;
+  font-family: "Patrick Hand", cursive;
+}
+
+.botonContact {
+  grid-column: 11/13;
   grid-row: 1/2;
+<<<<<<< HEAD:styles/styles.css
+  font-family: "Patrick Hand", cursive;
+  font-size: 19px;
+  height: 40px;
+}
+.botonContact a {
+  text-decoration: none;
+  color: black;
+=======
   font-size: 12px;
   padding: 16px;
   margin: 17px;
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 10px;
   color: white;
+>>>>>>> 7ef39a4612f93200ce99894c94b7e1c0e423ab11:sass/styles.css
 }
 
-.containerForm {
-  grid-column: 3/6;
-  grid-row: 1/8;
-  display: grid;
-  justify-content: flex-end;
-  align-content: space-around;
+/*NO DESKTOP*/
+
+.botonMobile{
+  display: none;
+}
+
+.ubiCarla {
+  display: none;
+}
+
+.ubiFede {
+  display: none;
+}
+
+.ubiMaria {
+  display: none;
+}
+
+.ubiJose {
+  display: none;
 }
 
 /*Keyframes*/
@@ -362,56 +712,240 @@
     width: 90%;
   }
 }
-/* Responsive mobile */
+@keyframes aviso {
+  from {
+    transform: none;
+  }
+  90% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 @media screen and (max-width: 320px) {
   .titleHeader {
-    grid-column: 1/6;
+    grid-column: 1/8;
     grid-row: 1/1;
-    font-size: 14px;
+    font-size: 12px;
+  }
+
+  .titleService {
+    grid-column: 3/11;
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+  }
+  .titleService h2 {
+    font-size: 12px;
+  }
+
+  .titleInsta {
+    grid-column: 2/12;
+    grid-row: 4/5;
+    justify-content: center;
+    align-items: baseline;
+  }
+  .titleInsta h2 {
+    font-size: 9px;
+    padding: 3px;
+    margin: 9px;
+    text-align: center;
   }
 
   .iconRuta {
-    grid-row: 1/1;
-    grid-column: 5/5;
+    display: none;
   }
 
-  .iconRuta img {
-    width: 36px;
+  .iconTractor {
+    display: none;
   }
 
   .containerNav {
-    grid-template-rows: repeat(3, 1fr);
-    height: 120px;
+    height: 87px;
   }
 
   .containerMenu {
-    display: grid;
-    grid-column: 1/5;
+    grid-column: 1/13;
     color: rgb(105, 20, 105);
-    grid-row: 2/4;
-    font-size: 12px;
-    justify-content: center;
+    grid-row: 2/3;
+    font-size: 10px;
+    list-style: none;
+  }
+  .containerMenu li {
+    height: 41px;
+    width: 51px;
+  }
+  .containerMenu li a img {
+    height: 25px;
   }
 
+  .containerMenuF {
+    font-size: 13px;
+  }
+
+  .containerGalery {
+    grid-template-rows: repeat(7, 1fr);
+  }
   .containerGalery div img {
     width: 60px;
     height: 60px;
   }
+  .containerGalery div iframe {
+    width: 90px;
+    height: 90px;
+  }
 
-  .containerGalery {
-    height: 300px;
+  .titleNos {
+    text-align: center;
+    grid-column: 3/11;
+  }
+  .titleNos h2 {
+    font-size: 12px;
+  }
+
+  .titleGral {
+    grid-column: 2/12;
+  }
+  .titleGral h1 {
+    font-size: 22px;
+  }
+  .titleGral h2 {
+    font-size: 8px;
+    color: black;
+  }
+
+  .botonMobile {
+    display: flex;
+    grid-column: 5/9;
+    grid-row: 1/2;
+    animation-name: parpadeo;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    font-size: 7px;
+    padding: 3px;
+    justify-content: center;
+    align-items: end;
+  }
+  .botonMobile a {
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 3px;
+    margin: 9px;
+    border-radius: 3px;
+  }
+
+  .botonContacto {
+    display: none;
+  }
+
+  .botonContact {
+    font-size: 12px;
+    grid-column: 10/13;
+  }
+  .botonContact a img {
+    height: 10px;
+  }
+
+  .iconSintacc {
+    grid-row: 6/7;
+  }
+
+  .iconGranos {
+    grid-row: 6/7;
+  }
+
+  .iconDulces {
+    grid-row: 6/7;
+  }
+
+  .iconMan1 {
+    grid-column: 2/6;
+  }
+
+  .iconMan2 {
+    grid-column: 8/13;
+  }
+
+  .iconGirl1 {
+    grid-column: 2/6;
+    grid-row: 3/4;
+  }
+
+  .iconGirl2 {
+    grid-column: 8/13;
+    grid-row: 3/4;
+  }
+<<<<<<< HEAD:styles/styles.css
+
+  .titleMap {
+    display: none;
+  }
+
+  .textMan1 {
+    display: none;
+  }
+
+  .textMan2 {
+    display: none;
+  }
+
+  .textGirl1 {
+    display: none;
+  }
+
+  .textGirl2 {
+    display: none;
+  }
+
+  .fondo--men1 {
+    display: none;
+  }
+
+  .fondo--men2 {
+    display: none;
+  }
+
+  .fondo--women1 {
+    display: none;
+  }
+
+  .fondo--women2 {
+    display: none;
+  }
+
+  .containerInstagram {
+    grid-column: 2/12;
+    grid-row: 4/6;
+    justify-content: center;
+    align-content: center;
+  }
+  .containerInstagram a img {
+    height: 153px;
+    width: 104px;
   }
 
   .containerFooter {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     font-size: 11px;
-    height: 73px;
+    height: 60px;
   }
 
-  .containerGalery div iframe {
-    width: 90px;
-    height: 90px;
+  .containerForm {
+    grid-column: 2/12;
+    grid-row: 2/8;
+    font-size: 14px;
+    height: 430px;
+  }
+  .containerForm label input {
+    width: 119px;
+    height: 15px;
+  }
+  .containerForm label select {
+    width: 86px;
+    height: 17px;
   }
 
   .titleNutriDescrip {
@@ -426,19 +960,80 @@
 
   .vid1 {
     grid-column: 2/6;
+    grid-row: 4/6;
   }
 
   .vid2 {
     grid-column: 7/11;
+    grid-row: 4/6;
   }
 
   .vid3 {
     grid-column: 2/6;
+    grid-row: 5/7;
+    align-items: center;
   }
 
   .vid4 {
     grid-column: 7/11;
+    grid-row: 5/7;
+    align-items: center;
   }
+
+  .formContact {
+    grid-column: 2/12;
+    display: flex;
+    justify-content: center;
+    grid-row: 1/1;
+    height: 36px;
+    align-self: center;
+  }
+  .formContact h1 {
+    font-size: 9px;
+    padding: 3px;
+    margin: 9px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    color: white;
+  }
+
+  .tableProducts td {
+    font-size: 12px;
+  }
+  .tableProducts tr {
+    font-size: 11px;
+  }
+
+  .textNutri {
+    grid-column: 2/12;
+    grid-row: 2/5;
+  }
+  .textNutri p {
+    font-size: 11px;
+    margin: 1px;
+    padding: 1px;
+  }
+
+  .textContacto {
+    grid-column: 2/12;
+    grid-row: 8/9;
+    font-size: 8px;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .containerMap {
+    grid-column: 4/10;
+    grid-row: none;
+    height: 135px;
+    width: 155px;
+  }
+  .containerMap a img {
+    height: 123px;
+    width: 124px;
+  }
+=======
+>>>>>>> 7ef39a4612f93200ce99894c94b7e1c0e423ab11:sass/styles.css
 }
 
 /*# sourceMappingURL=styles.css.map */
