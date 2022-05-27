@@ -1,0 +1,18 @@
+/*Extend*/
+
+.central{
+    display: flex;
+    justify-content: center;
+}
+
+.centralVid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parpadeo{
+    animation-name: aviso;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
